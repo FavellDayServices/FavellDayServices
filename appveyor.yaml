@@ -1,0 +1,15 @@
+version: 1.0.{build}
+build: off
+artifacts:
+- path: '**/*'
+deploy:
+- provider: FTP
+  host: ftp.favelldayservices.org.uk
+  protocol: ftp
+  username: favelldayservicesorguk
+  password:
+    secure: AEiK3wbZohr1qwLawSAlkQ==
+  folder: httpdocs
+  active_mode: false
+  beta: true
+  debug: true
